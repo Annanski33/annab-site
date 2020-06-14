@@ -1,0 +1,130 @@
+.logo {
+    font-family: $font-logo;
+    color: $white;
+    background-color: $black;
+    padding: .2rem 1rem;
+    border-radius: 3rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: .2px;
+
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+}
+
+.navigation__link {
+    font-family: 'Cobe-BoldItalic', Helvetica, Arial, Sans-Serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 2px;;
+}
+
+h1 {
+    font-family:'Cobe-Bold', Helvetica, Arial, Sans-Serif;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.greeting {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    line-height: 7.5rem;
+    letter-spacing: 3px;
+    color: $white;
+
+    &__hi {
+        color: $black;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+}
+
+.intro {
+    font-size: 4.7rem;
+    line-height: 5.2rem;
+    letter-spacing: 1px;
+    color: $white;
+    font-family:'Cobe-Light', Helvetica, Arial, Sans-Serif ;
+    width: 90%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 4rem;
+      line-height: 4.7rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+
+
+
+h2 {
+    font-family: 'Cobe-Bold', Helvetica, Arial, Sans-Serif;
+    font-size: 4rem;
+ 
+}
+
+.h2-about {
+    color: $color-gr-2;
+}
+
+.h2-skills {
+    color: $white;
+}
+
+.h2-projects {
+    color: $color-green-dark;
+}
+
+.h2-contact {
+    color: $white;
+}
+
+
+
+
+
+
+
+.u-text-center {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-family: 'Cobe-Light', Helvetica, Arial, Sans-Serif;
+    font-size: 3rem;
+    
+}
+
+/*.skills-title {
+    color: $color-green-light;
+    padding-bottom: 2.2rem;
+}*/
+
+.skills-p {
+    color: $white;
+    font-family: 'Cobe-Light', Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+h4 {
+    font-family: 'Cobe-Regular', Helvetica, Arial, Sans-Serif;
+    font-size: 2rem;
+    //text-transform: uppercase;
+    margin-bottom: 2.2rem;
+    color: $color-gr-2;
+}
+
+.project-title {
+    padding-bottom: 1rem;
+}

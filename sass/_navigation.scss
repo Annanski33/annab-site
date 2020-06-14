@@ -1,0 +1,60 @@
+.nav-wrapper {
+    //position: fixed;
+    position: absolute;
+    z-index: 3000;
+    //background-color: $color3;
+    width: 100%;
+}
+
+.navigation {
+    
+    width: 90%;
+    max-width: 110rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+   
+    
+    
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 40%;
+        //left: 50%;
+        list-style: none;
+        z-index: 2000;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 50%;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 70%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+        
+    }
+
+    /*&__logo__name {
+        height: 2.5rem;
+    }*/
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+    }
+
+}
+
+
+    
+    
+    
