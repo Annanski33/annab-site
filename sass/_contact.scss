@@ -1,10 +1,10 @@
 .contact {
     background-image: linear-gradient(
     to right bottom,
-    rgba($color-gr-1, 0.99),
-    rgba($color-gr-2, 0.99)),
-  url(../img/beach-hero.png);
-    padding: 15rem 0;
+    rgba($color-gr-1, 1),
+    rgba($color-gr-2, 1));
+    padding-top: 18rem;
+    padding-bottom: 12rem;
     margin-top: -10vh;
     position: relative;
 
@@ -23,11 +23,13 @@
     }
 }
 
-
+.icon-contact {
+    fill: #fff;
+    width: 4rem;
+    height: 4rem;
+}
 
 .form {
-
-    
     display: flex;
     flex-direction: column;
     //&:not(:last-child)
@@ -44,6 +46,10 @@
         border-radius: 1px;
         background-color: $color-green-light;
         display: block;
+
+        &__3 {
+            resize: none;
+        }
 
         &:focus {
             outline: none;

@@ -1,6 +1,6 @@
 .skills {
-    padding-top: 15rem;
-    padding-bottom: 20rem;
+    padding-top: 18rem;
+    padding-bottom: 18rem;
     background-color: $color-green-dark;
     margin-top: -10vh;
 
@@ -15,17 +15,12 @@
     width: 90%;
     max-width: 100rem;
     margin: 0 auto;
-    
-    
-    
- //align-items: flex-start;
-    //padding-top: 4rem;
 
     @media only screen and (max-width: $bp-medium) {
         flex-direction: column;
         align-items: center;
         width: 70%;
-      }
+    }
 }
 
 .icon-wrapper {
@@ -37,25 +32,13 @@
 }
 .icon-box {
     width: 8rem;
+    height: 8rem;
     margin: 2.5rem;
-}
+    fill: $color-green-light;
 
-.html-icon {
-    width: 100%;
-}
-
-.third-width {
-    width: 30%;
-    text-align: center;
-    
-    @media only screen and (max-width: $bp-medium) {
-        width: 70%;
+    &:hover {
+        transform: scale(0.8, 0.8);
+        transform: translateY(-5px);
     }
 }
-.skills-icon {
-    padding: 3rem;
 
-    @media only screen and (max-width: $bp-medium) {
-        padding-top: 5rem;
-    }
-}

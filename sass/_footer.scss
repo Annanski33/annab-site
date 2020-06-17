@@ -1,4 +1,12 @@
 .footer {
-    height: 10rem;
-    background-color: $color-green-dark;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  background-color: $color-green-dark;
+
+  &__text {
+    font-size: 1.2rem;
+    color: $color-green-light;
+    text-align: center;
+    margin: 2rem auto;
+  }
 }
