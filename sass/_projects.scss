@@ -1,55 +1,55 @@
 .section-projects {
-    padding: 10rem 0;
-    background-color: $color-light-grey;
-    margin-top: -10vh;
+  padding: 10rem 0;
+  background-color: $color-light-grey;
+  margin-top: -10vh;
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 10vh, 50% 1vh, 100% 10vh, 100% 100%, 0 100%);
-        clip-path: polygon(0 10vh, 50% 1vh, 100% 10vh, 100% 100%, 0 100%);
-    }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 10vh, 50% 1vh, 100% 10vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 10vh, 50% 1vh, 100% 10vh, 100% 100%, 0 100%);
+  }
 }
 
 .card {
-    width: 90%;
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 6rem 0;
-    display: flex;
-    justify-content: space-between;
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-between;
     
+  @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 3px solid $color-green-dark;
+  }
+
+  &__img-tools {
+    width: 40%;
+    min-width: 26rem;
+    padding-right: 2rem;
+    text-align: center;
+
     @media only screen and (max-width: $bp-medium) {
-        flex-direction: column;
-        align-items: center;
+      width: 70%;
+      padding-right: 0;
     }
+  }
 
-    &:not(:last-child) {
-        border-bottom: 3px solid $color-green-dark;
+  &__description {
+    width: 50%;
+    min-width: 33rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 70%;
+      text-align: center;
+      padding-top: 3rem;
     }
-
-    &__img-tools {
-        width: 40%;
-        min-width: 26rem;
-        padding-right: 2rem;
-        text-align: center;
-
-        @media only screen and (max-width: $bp-medium) {
-            width: 70%;
-            padding-right: 0;
-        }
-    }
-
-    &__description {
-        width: 50%;
-        min-width: 33rem;
-
-        @media only screen and (max-width: $bp-medium) {
-            width: 70%;
-            text-align: center;
-            padding-top: 3rem;
-        }
-    }
+  }
 }
 
 .project-img1 {
-    width: 100%;
+  width: 100%;
 }

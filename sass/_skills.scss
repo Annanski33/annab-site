@@ -1,44 +1,43 @@
 .skills {
-    padding-top: 18rem;
-    padding-bottom: 18rem;
-    background-color: $color-green-dark;
-    margin-top: -10vh;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  background-color: $color-green-dark;
+  margin-top: -10vh;
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-       -webkit-clip-path: polygon(0 0vh, 50% 9vh, 100% 0vh, 100% 100%, 0 100%);
-        clip-path: polygon(0 0vh, 50% 9vh, 100% 0vh, 100% 100%, 0 100%);
-        
-    }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0vh, 50% 9vh, 100% 0vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0vh, 50% 9vh, 100% 0vh, 100% 100%, 0 100%);
+  }
 }
 
 .skills-wrapper {
-    width: 90%;
-    max-width: 100rem;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 100rem;
+  margin: 0 auto;
 
-    @media only screen and (max-width: $bp-medium) {
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
 }
 
 .icon-wrapper {
-    width: 100%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .icon-box {
-    width: 8rem;
-    height: 8rem;
-    margin: 2.5rem;
-    fill: $color-green-light;
+  width: 8rem;
+  height: 8rem;
+  margin: 2.5rem;
+  fill: $color-green-light;
 
-    &:hover {
-        transform: scale(0.8, 0.8);
-        transform: translateY(-5px);
-    }
+  &:hover {
+    transform: scale(0.8, 0.8);
+    transform: translateY(-5px);
+  }
 }
 

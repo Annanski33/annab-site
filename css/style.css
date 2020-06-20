@@ -21,8 +21,8 @@ html {
       font-size: 50%; } }
 
 /*p {
-    font-family: $font-primary;
-    font-size: 1.8rem;
+  font-family: $font-primary;
+  font-size: 1.8rem;
 }*/
 body {
   font-family: "Cobe-Light", Helvetica, Arial, Sans-Serif;
@@ -137,14 +137,11 @@ h2 {
 .h2-about {
   color: #7400b1; }
 
-.h2-skills {
+.h2-skills, .h2-contact {
   color: #fff; }
 
 .h2-projects {
   color: #4a0391; }
-
-.h2-contact {
-  color: #fff; }
 
 .u-text-center {
   text-align: center;
@@ -155,8 +152,8 @@ h3 {
   font-size: 3rem; }
 
 /*.skills-title {
-    color: $color-green-light;
-    padding-bottom: 2.2rem;
+  color: $color-green-light;
+  padding-bottom: 2.2rem;
 }*/
 .skills-p {
   color: #fff;
@@ -189,8 +186,8 @@ h4 {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
   /*&__logo__name {
-        height: 2.5rem;
-    }*/ }
+    height: 2.5rem;
+  }*/ }
   .navigation__menu {
     display: flex;
     justify-content: space-between;
