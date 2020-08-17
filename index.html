@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/webfonts/cobe-bold.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="/css/webfonts/cobe-bold-italic.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="/css/webfonts/cobe-light.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="/css/webfonts/cobe-light-italic.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="/css/webfonts/cobe-regular.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="/css/webfonts/cobe-italic.css" type="text/css" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/fav_cobo.png">     
+    <link rel="shortcut icon" type="image/png" href="img/fav-3.png">     
     <title>Anna B. &mdash; Front-End Developer</title>
   </head>
   <body>
-  <!-------------HEADER-------------->
+  <!-------------NAVIGATION-------------->
     <div class="nav-wrapper">
       <div class="navigation">
         <div class="navigation__logo">
-          <h5 class="logo">ab</h5>
+          <a href="#home"><img class="navigation__logo__name" src="img/script-logo.png" alt="AnnaB Logo"></a>
         </div>
         <ul class="navigation__menu">
+          <li><a href="#home" class="navigation__home">AB</a></li>
           <li><a href="#about" class="navigation__link">About</a></li>   
           <li><a href="#skills" class="navigation__link">Skills</a></li>
           <li><a href="#projects" class="navigation__link">Projects</a></li>
@@ -29,7 +29,7 @@
         </ul>
       </div>
     </div>
-    <!--hero-->
+    <!------HERO--------->
     <header class="header" id="home">
       <ul class="animation-area">
         <li></li>
@@ -40,8 +40,8 @@
         <li></li>
       </ul>   
       <div class="header__text">     
-        <h1 class="greeting"><span class="greeting__hi">Hi there!</span> I'm Anna!</h1>
-        <h1 class="intro">I am a front-end developer based in Toronto, Canada.</h1> 
+        <h1 class="greeting">Hi there! <span class="greeting__name"> I'm Anna!</span></h1>
+        <h1 class="intro">I am a front-end developer and designer based in Toronto, Canada.</h1> 
         <a href="#projects" class="button">See My Work</a>      
       </div>
       <div class="header__arrow">
@@ -57,12 +57,12 @@
       </div>
       <div class="about-wrapper">
         <div class="half-width">
-          <img src="img/bw-portrait.png" alt="Anna's Photo" class="about__img">
+          <img src="img/portrait3.png" alt="Anna's Photo" class="about__img">
         </div>
         <div class="half-width">
-          <p class="about__text">Hello, my name is Anna. Since 2019 I've been working as a freelance designer and front-end developer for different clients. I specialize in HTML5, CSS3, JavaScript, PHP, Wordpress, and I am constantly learning new skills. I live in Toronto, Canada with my fiance Chris and our cat Max.</p>
-          <p class="about__text">Before my freelancing, I was working as a purchaser, administrative assistant, accountant, and retail clerk.</p>
-          <p class="about__text">I love spending my free time in nature with a small group of friends, read, take pictures, and eat good food. </p>
+          <p class="about__text">Hi, my name is Anna. I am a front-end web developer. I specialize in HTML5, CSS3, JavaScript, JQuery, PHP, WordPress, and I am constantly learning new skills. I live in Toronto, Canada with my fiancé Chris and our cat Max.</p>
+          <p class="about__text">Before I learned to program I worked as a designer, video editor, accounting/administrative assistant, and even retail manager. It was all great fun! I was always tech-savvy though, and I knew that I would become a developer.</p>
+          <p class="about__text">Outside of work I love going on road trips, hiking, cycling, and spending time with my friends and family. My interests include the environment, art, literature, architecture, and CATS!</p>
         </div>
       </div>   
     </section>
@@ -71,47 +71,25 @@
       <div class="u-text-center">
         <h2 class="h2-skills">Skills</h2>
       </div>
+      
       <div class="skills-wrapper">
-        <p class="skills-p">My focus is to write clean, well-formatted code to make sure that the content is easy to read, easy to collaborate, trouble-shoot, and build on. I have experience editing and updating existing sites and dynamic web applications, and I do my best to stay up to date on current best practices.</p>
-        <div class="icon-wrapper">
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-html5"></use>
-          </svg>
-          <svg class="icon-box">
-             <use xlink:href="img/sprite.svg#icon-css3"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-javascript"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-jquery"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-sass"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-wordpress"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-php"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-nodejs"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-git"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-vstudio"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-ps"></use>
-          </svg>
-          <svg class="icon-box">
-            <use xlink:href="img/sprite.svg#icon-ai"></use>
-          </svg>
-        </div>  
+        <div class="third-width">
+          <img class="skills-icon" src="img/development.png" alt="HTML icon" />
+          <h3 class="skills-title">Design Conversion</h3>
+          <p class="skills-p">My focus is writing clean, well-formatted HTML5 and CSS(Sass) to make sure the content is easy to read, easy to collaborate and build on. I have experience collaborating on a project using Git and GitHub.</p>
+        </div>
+        <div class="third-width">
+          <img class="skills-icon" src="img/algorithm.png" alt="CSS icon" />
+          <h3 class="skills-title">App Building</h3>
+          <p class="skills-p">I have a basic knowledge of JavaScript, jQuery, and some Ruby. I understand that I will be learning new tricks and new extensions constantly and I am excited about it. At the moment I’m taking a course in Computer Science theory.</p>
+        </div>
+        <div class="third-width">
+          <img class="skills-icon" src="img/responsive-design.png" alt="Pencil icon" />
+          <h3 class="skills-title">WordPress</h3>
+          <p class="skills-p">You can trust me to make a WordPress website fast! I use Advanced Custom Fields and child themes (PHP) to customize content and design. I have experience building e-commerce sites with WooCommerce.</p>
+        </div>
       </div>
+
     </section>
     <!------------Projects--------------->
     <section class="section-projects" id="projects">
@@ -120,32 +98,41 @@
       </div>
       <div class="card">
         <div class="card__img-tools">
-          <img src="img/laptop.png" alt="laptop" class="project-img1">
+          <img src="img/accmark.png" alt="laptop" class="project-img1">
         </div>
         <div class="card__description">
-          <h3 class="project-title">Project Title (Coming Soon)</h3>
-          <h4 class="project-subtitle">HTMS, CSS, Wordpress, PHP</h4>
-          <p class="project-story">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ab tempore impedit? Praesentium facilis rem deleniti quibusdam! Est expedita eius veritatis accusantium deleniti saepe facere.</p>
+          <h3 class="project-title">Accelerate Website</h3>
+          <h4 class="project-subtitle">Wordpress, PHP, ACF.</h4>
+          <p class="project-story">Created a WordPress site with a blog section. Child theme development, custom posts and pages creation using Advanced Custom Fields and PHP. Plugin integration.</p>
+          <div class="project-links">
+            <a href="203-accelerate/index.php">View Online</a>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="card__img-tools">
-          <img src="img/laptop.png" alt="laptop" class="project-img1">
+          <img src="img/luxeres.png" alt="laptop" class="project-img1">
         </div>
         <div class="card__description">
-          <h3 class="project-title">Project Title (Coming Soon)</h3>
-          <h4 class="project-subtitle">HTMS, CSS, Wordpress, PHP</h4>
-          <p class="project-story">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ab tempore impedit? Praesentium facilis rem deleniti quibusdam! Est expedita eius veritatis accusantium deleniti saepe facere.</p>
+          <h3 class="project-title">LUXE Resorts - PSD Conversion</h3>
+          <h4 class="project-subtitle">HTML, CSS, Sass, Responsive Design</h4>
+          <p class="project-story">Built a site from scratch using HTML5, CSS3, Sass, npm, and Json, used Grid layout system, SVG icons.</p>
+          <div class="project-links">
+            <a href="luxe/index.html">View Online</a>, <a href="#">GitHub</a>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="card__img-tools">
-          <img src="img/laptop.png" alt="laptop" class="project-img1">
+          <img src="img/lolcat2.png" alt="laptop" class="project-img1">
         </div>
         <div class="card__description">
-          <h3 class="project-title">Project Title (Coming Soon)</h3>
-          <h4 class="project-subtitle">HTMS, CSS, Wordpress, PHP</h4>
-          <p class="project-story">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ab tempore impedit? Praesentium facilis rem deleniti quibusdam! Est expedita eius veritatis accusantium deleniti saepe facere.</p>
+          <h3 class="project-title">LOLCat Clock</h3>
+          <h4 class="project-subtitle">JavaScript, jQuery.</h4>
+          <p class="project-story">A fun app about cat activities. DOM, events, and event listeners.</p>
+          <div class="project-links">
+            <a href="lolcat/index.html">View Online</a>, <a href="#">GitHub</a>
+          </div>
         </div>
       </div>
     </section>
@@ -155,7 +142,7 @@
         <div class="u-text-center">
           <h2 class="h2-contact">Like what you see?<br>Contact me!</h2>
         </div>
-        <div class="contact__social">
+        <!--<div class="contact__social">
           <svg class="icon-contact">
             <use xlink:href="img/sprite.svg#icon-linkedin"></use>
           </svg>
@@ -165,8 +152,8 @@
           <svg class="icon-contact">
             <use xlink:href="img/sprite.svg#icon-behance2"></use>
           </svg>
-        </div>
-        <form class="contact__form form" action="http://www.focuspocus.io/magic/..." method="POST" name="contact-form">
+        </div> -->
+        <form class="contact__form form" action="http://www.focuspocus.io/magic/annanski@outlook.com" method="POST" name="contact-form">
           <input type="text" class="form__input" id="name" name="Name" placeholder="Name" required>
           <label for="name" class="hidden">Name</label>
           <input type="email" class="form__input" id="email" name="Email" placeholder="Email address" required>
@@ -174,14 +161,15 @@
           <textarea class="form__input form__input__3" id="comment" name="Comment" placeholder="Hello Anna!" required cols="30" rows="8"></textarea>
           <label for="comment" class="hidden">Message</label>
           <label for="submit" class="hidden">Submit</label>
-          <button class="button" id="submit">Submit your message</button>
+          <button class="button" id="submit">Submit Your Message</button>
         </form>
       </div>
     </section>
     </main>
   <!--------------FOOTER---------------->
     <footer class="footer">
-      <div class="footer__text">&copy; 2020 by ANNAB</div> 
+      <div class="footer__text">&copy; 2020 by ANNA BELENKOVA / Skills Icons by <a class="credit" target="_blank" href="https://www.flaticon.com/icon-packs/eucalyp">Eucalyp</a></div> 
+      <a href=""></a>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>

@@ -35,16 +35,16 @@
   //&:not(:last-child)
     
   &__input {
-    border: 1px solid $color-green-dark;
+    border: 1px solid $color-dark;
     margin-top: 2rem;
-    color: #000;
+    color: $color-very-dark;
     font-size: 2rem;
     font-family: inherit;
        
     letter-spacing: 1px;
     padding: 1rem 1.5rem;
     border-radius: 1px;
-    background-color: $color-green-light;
+    background-color: $color-very-light;
     display: block;
 
     &__3 {
@@ -54,7 +54,7 @@
     &:focus {
       outline: none;
       box-shadow: 3px 1rem rgba(#000, .1);
-      border-bottom: 3px solid $color-green-dark;
+      border-bottom: 3px solid $color-dark;
     }
   }
 }

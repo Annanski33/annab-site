@@ -15,7 +15,7 @@
   margin: 0 auto;
   padding: 6rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
     
   @media only screen and (max-width: $bp-medium) {
       flex-direction: column;
@@ -23,7 +23,7 @@
   }
 
   &:not(:last-child) {
-    border-bottom: 3px solid $color-green-dark;
+    border-bottom: 3px solid $color-gr-2;
   }
 
   &__img-tools {
@@ -52,4 +52,25 @@
 
 .project-img1 {
   width: 100%;
+  //padding-left: 10px;
+}
+
+.project-links {
+  margin-top: 1.6rem;
+  color: $color-accent;
+  &:hover {
+    //box-shadow: 2px 3px rgba(#000, .1);
+    transform: translateY(-3px);
+  }
+}
+
+.project-links a {
+  font-family: $font-titles;
+  font-size: 1.8rem;
+  color: $color-accent;
+
+  &:hover {
+    //box-shadow: 2px 3px rgba(#000, .1);
+    transform: translateY(-3px);
+  }
 }

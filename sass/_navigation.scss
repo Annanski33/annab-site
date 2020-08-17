@@ -2,7 +2,7 @@
   position: fixed;
   //position: absolute;
   z-index: 3000;
-  background-color: rgba($color-green-dark, $alpha: .97);
+  background-color: rgba($color-dark, $alpha: .97);
   width: 100%;
 }
 
@@ -38,13 +38,35 @@
     }
   }
 
-  /*&__logo__name {
+  &__logo__name {
+    margin-bottom: -0.7rem;
     height: 2.5rem;
-  }*/
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+
+  &__home {
+    font-family: $font-button;
+    font-size: 2.5rem;
+    color: $color-accent;
+    text-decoration: none;
+    display: none;
+
+    @media only screen and (max-width: $bp-small) {
+      display: unset;
+    }
+  }
 
   &__link {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.6rem;
+
+    &:hover {
+      color: $color-accent;
+    }
   }
+
 }  

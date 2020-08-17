@@ -2,8 +2,17 @@
 
 $color-gr-1: #0099f8;
 $color-gr-2: #7400b1;
+$color-dark: #4a0391;
+$color-very-light: #fdfdfd;
+$color-very-dark: #4e4e4e;
+
+//$color-accent: #fd9696;
+$color-accent: #ff7a8d;
+$color-accent-light: #f7abab;
+$color-accent-dark: #f78484;
 $color-green-light:#7EFFEA;
-$color-green-dark: #4a0391;
+
+
 $white: #fff;
 $black: #000;
 $color-light-grey: #e9e9e9;
@@ -18,20 +27,9 @@ $bp-small: 34.375em; //550px
 // FONT VARIABLES
 
 
-//$font-primary: 'Lato', sans-serif;
-$font-primary: 'Cobe-Light', Helvetica, Arial, Sans-Serif;
-
-$font-logo: 'Cobe-Regular', Helvetica, Arial, Sans-Serif;
-$font-button:'Cobe-Light', Helvetica, Arial, Sans-Serif;
-
-/* font-family: 'Cobe-Bold', Helvetica, Arial, Sans-Serif;
-font-family: 'Cobe-BoldItalic', Helvetica, Arial, Sans-Serif;
-
-font-family: 'Cobe-Light', Helvetica, Arial, Sans-Serif;
-font-family: 'Cobe-LightItalic', Helvetica, Arial, Sans-Serif;
-
-font-family: 'Cobe-Regular', Helvetica, Arial, Sans-Serif;
-font-family: 'Cobe-Italic', Helvetica, Arial, Sans-Serif; */
+$font-primary: 'Lato', sans-serif;
+$font-titles:'Inder', sans-serif;
+$font-button:'Caveat', cursive;
 
 
 // BASE STYLES
@@ -62,11 +60,12 @@ html {
 
 body {
   font-family: $font-primary;
+  font-weight: 300;
   font-size: 2rem; 
   letter-spacing: .5px;
   position: relative;
   line-height: 1.3;
-  background-color: $color-green-dark;
+  background-color: $color-dark;
 }
 
 
@@ -74,13 +73,14 @@ body {
   &,
   &:link,
   &:visited {
-    margin-top: 4rem;
+    margin-top: 6rem;
     font-family: $font-button;
-    text-transform: lowercase;
-    font-size: 2.2rem;
+    color: $color-dark;
+    //text-transform: lowercase;
+    font-size: 3rem;
     letter-spacing: 1px;
     text-decoration: none;
-    background-color: $white;
+    background-color: $color-accent;
     padding: 1rem 4rem;
     display: inline-block;
     border-radius: 50px;

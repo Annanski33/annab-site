@@ -1,6 +1,6 @@
 .about {  
-  padding-top: 18rem;
-  padding-bottom: 12rem;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
   margin-top: -10vh;
   //position:relative;
   background-color: $color-light-grey;
@@ -8,14 +8,17 @@
 
   &__img {
     width: 100%;
-    border: 1px solid grey;
+    //border: 1px solid grey;
 
     @media only screen and (max-width: $bp-medium) {
       margin-bottom: 3rem;
     }
   }
   &__text {
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    font-style: italic;
+    font-size: 1.8rem;
+    //color: $color-dark;
   }
 }
 
