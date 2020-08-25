@@ -58,19 +58,16 @@
 .project-links {
   margin-top: 1.6rem;
   color: $color-accent;
-  &:hover {
-    //box-shadow: 2px 3px rgba(#000, .1);
-    transform: translateY(-3px);
-  }
 }
 
 .project-links a {
   font-family: $font-titles;
   font-size: 1.8rem;
   color: $color-accent;
+  text-decoration: none;
 
   &:hover {
-    //box-shadow: 2px 3px rgba(#000, .1);
-    transform: translateY(-3px);
+    font-style: italic;
+    text-decoration: underline;
   }
 }

@@ -57,11 +57,11 @@
       </div>
       <div class="about-wrapper">
         <div class="half-width">
-          <img src="img/portrait3.png" alt="Anna's Photo" class="about__img">
+          <img src="img/bw-portrait.png" alt="Anna's Photo" class="about__img">
         </div>
         <div class="half-width">
           <p class="about__text">Hi, my name is Anna. I am a front-end web developer. I specialize in HTML5, CSS3, JavaScript, JQuery, PHP, WordPress, and I am constantly learning new skills. I live in Toronto, Canada with my fiancé Chris and our cat Max.</p>
-          <p class="about__text">Before I learned to program I worked as a designer, video editor, accounting/administrative assistant, and even retail manager. It was all great fun! I was always tech-savvy though, and I knew that I would become a developer.</p>
+          <p class="about__text">Before I learned to program I worked as a designer, video editor, accounting/administrative assistant, and retail manager. I enjoyed it all! I've always been tech-savvy though, and I intended to become a developer.</p>
           <p class="about__text">Outside of work I love going on road trips, hiking, cycling, and spending time with my friends and family. My interests include the environment, art, literature, architecture, and CATS!</p>
         </div>
       </div>   
@@ -105,7 +105,7 @@
           <h4 class="project-subtitle">Wordpress, PHP, ACF.</h4>
           <p class="project-story">Created a WordPress site with a blog section. Child theme development, custom posts and pages creation using Advanced Custom Fields and PHP. Plugin integration.</p>
           <div class="project-links">
-            <a href="203-accelerate/index.php">View Online</a>
+            <a href="203-accelerate/index.php" target="_blank">View Online</a>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
           <h4 class="project-subtitle">HTML, CSS, Sass, Responsive Design</h4>
           <p class="project-story">Built a site from scratch using HTML5, CSS3, Sass, npm, and Json, used Grid layout system, SVG icons.</p>
           <div class="project-links">
-            <a href="luxe/index.html">View Online</a>, <a href="#">GitHub</a>
+            <a href="luxe/index.html" target="_blank">View Online</a>, <a href="#" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
@@ -131,17 +131,14 @@
           <h4 class="project-subtitle">JavaScript, jQuery.</h4>
           <p class="project-story">A fun app about cat activities. DOM, events, and event listeners.</p>
           <div class="project-links">
-            <a href="lolcat/index.html">View Online</a>, <a href="#">GitHub</a>
+            <a href="lolcat/index.html" target="_blank">View Online</a>, <a href="#" target="_blank">GitHub</a>
           </div>
         </div>
       </div>
     </section>
-    <!------------CONTACT-------------->
-    <section class="contact" id="contact">
-      <div class="contact__wrapper">
-        <div class="u-text-center">
-          <h2 class="h2-contact">Like what you see?<br>Contact me!</h2>
-        </div>
+
+    <!------------ ICONS FOR LATER -------------->
+    
         <!--<div class="contact__social">
           <svg class="icon-contact">
             <use xlink:href="img/sprite.svg#icon-linkedin"></use>
@@ -153,25 +150,60 @@
             <use xlink:href="img/sprite.svg#icon-behance2"></use>
           </svg>
         </div> -->
-        <form class="contact__form form" action="http://www.focuspocus.io/magic/annanski@outlook.com" method="POST" name="contact-form">
-          <input type="text" class="form__input" id="name" name="Name" placeholder="Name" required>
-          <label for="name" class="hidden">Name</label>
-          <input type="email" class="form__input" id="email" name="Email" placeholder="Email address" required>
-          <label for="email" class="hidden">Email</label>
-          <textarea class="form__input form__input__3" id="comment" name="Comment" placeholder="Hello Anna!" required cols="30" rows="8"></textarea>
-          <label for="comment" class="hidden">Message</label>
-          <label for="submit" class="hidden">Submit</label>
-          <button class="button" id="submit">Submit Your Message</button>
-        </form>
-      </div>
-    </section>
-    </main>
+
+    <!-------- FREE CONTACT FORM  ----------->
+
+    <section class="fcf-body" id="contact"> 
+
+     <div id="fcf-form">
+      <h2 class="h2-contact u-text-center">Like what you see?<br>Contact me!</h2>
+      <form id="fcf-form-id" class="fcf-form-class" method="post" action="fcf-assets/contact-form.process.php">
+
+        <div class="fcf-form-group">
+          <label for="Name" class="fcf-label hidden">Your name</label>
+          <div class="fcf-input-group">
+            <input type="text" id="Name" name="Name" class="fcf-form-control" placeholder="Your Name" data-validate-field="Name">
+          </div>
+        </div>
+
+        <div class="fcf-form-group">
+          <label for="Email" class="fcf-label hidden">Your email address</label>
+          <div class="fcf-input-group">
+            <input type="email" id="Email" name="Email" class="fcf-form-control" placeholder="Your Email" data-validate-field="Email">
+          </div>
+        </div>
+
+        <div class="fcf-form-group">
+          <label for="Message" class="fcf-label hidden">Your message</label>
+          <div class="fcf-input-group">
+            <textarea id="Message" name="Message" class="fcf-form-control fcf-form-control__3" rows="6" placeholder="Message" data-validate-field="Message" maxlength="3000"></textarea>
+          </div>
+        </div>
+
+        <div id="fcf-status" class="fcf-status"></div>
+        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block button">Submit Your Message</button>
+    
+      </form>
+    </div>
+
+
+    <div id="fcf-thank-you">
+      <h2 class="h2-contact u-text-center">Thank you for getting in touch!</h2>
+      <p class="thanks-p">I appreciate you contacting me! I will get back in touch with you soon.</p>
+    </div>
+  </section>
+  
+  </main>
+
   <!--------------FOOTER---------------->
-    <footer class="footer">
-      <div class="footer__text">&copy; 2020 by ANNA BELENKOVA / Skills Icons by <a class="credit" target="_blank" href="https://www.flaticon.com/icon-packs/eucalyp">Eucalyp</a></div> 
-      <a href=""></a>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+  <footer class="footer">
+    <div class="footer__text">&copy; 2020 by ANNA BELENKOVA / Skills Icons by <a class="credit" target="_blank" href="https://www.flaticon.com/icon-packs/eucalyp">Eucalyp</a> Contact Form provided by <a class="credit" href="https://www.freecontactform.com/" rel="nofollow" target="_blank">FreeContactForm</a></div> 
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script src="fcf-assets/js/fcf-just-validate.js"></script>
+  <script src="fcf-assets/js/contact-form.js"></script>
+
   </body>
 </html>
